@@ -12,6 +12,7 @@ class MusicBeatState extends FlxUIState
 
 	private var curStep:Int = 0;
 	private var curBeat:Int = 0;
+	public static var public_curBeat:Int = 0;
 
 	private var curDecStep:Float = 0;
 	private var curDecBeat:Float = 0;
@@ -77,6 +78,8 @@ class MusicBeatState extends FlxUIState
 		stagesFunc(function(stage:BaseStage) {
 			stage.update(elapsed);
 		});
+
+		public_curBeat = curBeat;
 
 		super.update(elapsed);
 	}
@@ -180,7 +183,6 @@ class MusicBeatState extends FlxUIState
 	public var stages:Array<BaseStage> = [];
 	public function beatHit():Void
 	{
-		//trace('Beat: ' + curBeat);
 		stagesFunc(function(stage:BaseStage) {
 			stage.curBeat = curBeat;
 			stage.curDecBeat = curDecBeat;

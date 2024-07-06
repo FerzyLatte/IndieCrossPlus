@@ -197,6 +197,9 @@ class FreeplayState extends MusicBeatState
 	var holdTime:Float = 0;
 	override function update(elapsed:Float)
 	{
+		if (FlxG.sound.music != null)
+			Conductor.songPosition = FlxG.sound.music.time;
+
 		if (FlxG.sound.music.volume < 0.7)
 		{
 			FlxG.sound.music.volume += 0.5 * FlxG.elapsed;
@@ -263,7 +266,7 @@ class FreeplayState extends MusicBeatState
 
 				if(FlxG.mouse.wheel != 0)
 				{
-					FlxG.sound.play(Paths.sound('scrollMenu'), 0.2);
+					FlxG.sound.play(Paths.sound('scrollMenu'), 0.6);
 					changeSelection(-shiftMult * FlxG.mouse.wheel, false);
 				}
 			}
@@ -294,6 +297,8 @@ class FreeplayState extends MusicBeatState
 
 				FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 				FlxTween.tween(FlxG.sound.music, {volume: 1}, 1);
+
+				Conductor.bpm = 117;
 			}
 			else 
 			{
@@ -321,6 +326,7 @@ class FreeplayState extends MusicBeatState
 				Mods.currentModDirectory = songs[curSelected].folder;
 				var poop:String = Highscore.formatSong(songs[curSelected].songName.toLowerCase(), curDifficulty);
 				PlayState.SONG = Song.loadFromJson(poop, songs[curSelected].songName.toLowerCase());
+				Conductor.bpm = PlayState.SONG.bpm;
 				if (PlayState.SONG.needsVoices)
 				{
 					vocals = new FlxSound().loadEmbedded(Paths.voices(PlayState.SONG.song));
@@ -457,7 +463,7 @@ class FreeplayState extends MusicBeatState
 			return;
 
 		_updateSongLastDifficulty();
-		if(playSound) FlxG.sound.play(Paths.sound('scrollMenu'), 0.4);
+		if(playSound) FlxG.sound.play(Paths.sound('scrollMenu'), 0.8);
 
 		var lastList:Array<String> = Difficulty.list;
 		curSelected += change;
@@ -565,6 +571,15 @@ class FreeplayState extends MusicBeatState
 		FlxG.autoPause = ClientPrefs.data.autoPause;
 		if (!FlxG.sound.music.playing)
 			FlxG.sound.playMusic(Paths.music('freakyMenu'));
+	}
+	
+	override function beatHit()
+	{
+		if (MusicBeatState.public_curBeat % 2 == 0 && player.playingMusic && !player.paused) {
+		FlxG.camera.zoom = 1.025;
+		FlxTween.tween(FlxG.camera, {zoom:1}, Conductor.crochet/1000/FlxG.sound.music.pitch, {ease:FlxEase.cubeOut});
+		}
+		super.beatHit();
 	}	
 }
 

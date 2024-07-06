@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="MenuSideCharacters.png">
+<SubTexture name="SketchMove0000" x="0" y="0" width="1284" height="712" frameX="0" frameY="-12" frameWidth="1280" frameHeight="720" />
+<SubTexture name="SketchMove0001" x="0" y="712" width="1284" height="708" frameX="0" frameY="-16" frameWidth="1280" frameHeight="720" />
+<SubTexture name="SketchMove0002" x="0" y="1420" width="1284" height="714" frameX="0" frameY="-10" frameWidth="1280" frameHeight="720" />
+</TextureAtlas>
