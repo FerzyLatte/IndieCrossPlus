@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Logo.png">
+<SubTexture name="bump0000" x="0" y="0" width="923" height="517" frameX="-198" frameY="-133" frameWidth="1296" frameHeight="838" />
+<SubTexture name="bump0001" x="0" y="517" width="985" height="551" frameX="-167" frameY="-116" frameWidth="1296" frameHeight="838" />
+<SubTexture name="bump0002" x="0" y="1068" width="975" height="546" frameX="-172" frameY="-118" frameWidth="1296" frameHeight="838" />
+<SubTexture name="bump0003" x="0" y="1614" width="971" height="543" frameX="-174" frameY="-120" frameWidth="1296" frameHeight="838" />
+<SubTexture name="bump0004" x="0" y="2157" width="957" height="535" frameX="-181" frameY="-124" frameWidth="1296" frameHeight="838" />
+<SubTexture name="bump0005" x="0" y="2692" width="943" height="528" frameX="-188" frameY="-127" frameWidth="1296" frameHeight="838" />
+<SubTexture name="bump0006" x="0" y="3220" width="935" height="523" frameX="-192" frameY="-130" frameWidth="1296" frameHeight="838" />
+<SubTexture name="bump0007" x="0" y="0" width="923" height="517" frameX="-198" frameY="-133" frameWidth="1296" frameHeight="838" />
+</TextureAtlas>

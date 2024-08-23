@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Playbutton.png">
+<SubTexture name="button0000" x="0" y="0" width="507" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0001" x="507" y="0" width="515" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0002" x="0" y="138" width="521" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0003" x="521" y="138" width="526" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0004" x="0" y="276" width="530" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0005" x="530" y="276" width="532" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0006" x="0" y="414" width="534" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0007" x="534" y="414" width="534" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0008" x="0" y="552" width="530" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0009" x="530" y="552" width="532" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0010" x="0" y="690" width="534" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0011" x="534" y="690" width="534" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0012" x="0" y="828" width="530" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0013" x="530" y="828" width="532" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0014" x="0" y="966" width="534" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0015" x="534" y="966" width="534" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+<SubTexture name="button0016" x="0" y="0" width="507" height="138" frameX="-6" frameY="-2" frameWidth="546" frameHeight="143" />
+</TextureAtlas>
